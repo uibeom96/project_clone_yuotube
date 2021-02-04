@@ -1,5 +1,5 @@
-# project_clone_yuotube
-[ 프론트엔드 개발자 되자 ! ] Part.1 첫번째 개인 클론 프로젝트 '유튜브'
+# project_clone_hongtube
+[ 프론트엔드 개발자 되자 ! ] Part.1 첫번째 프로젝트 '유튜브'
 
 기본적인 백엔드를 배우고 처음 만들어본 프론트엔드 개인 프로젝트 입니다.
 python django 프레임워크를 사용하여 서버를 구축 하였고
