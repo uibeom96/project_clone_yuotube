@@ -1,10 +1,24 @@
 <nav>
     <div class="logo">
+        <button><i class="fas fa-bars"></i></button>
         <i class="fab fa-youtube"></i>
-        <span class="title">Youtube</span>
+        <span class="title"><a href="{% url 'youtube:index' %}">Youtube</a></span>
     </div>
-    <div class="icons">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-ellipsis-v"></i>    
+
+    <div class="search">
+        <form action="" method="GET">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="검색어 입력">
+            <button type="submit">검색</button>
+        </form>
     </div>
+    
+    <div class="user_room">
+        <span>
+            <img src="/static/img/카카오곰탱이.jpg" alt=""> TEST님,</span>
+        <a class="user_login" href="">로그인</a>
+        <a class="user_logout" href="">회원가입</a>
+    </div>
+
+    
 </nav>

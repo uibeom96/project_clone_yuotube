@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %} Youtube List {% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-2">
+        <ul class="menu_list">
+            <a href=""><i class="fas fa-h-square"><li>홈</li></i></a>
+            <a href=""><i class="fas fa-fire"><li>인기</li></i></a>
+            <a href=""><i class="far fa-bookmark"><li>구독</li></i></a>
+            <hr>
+            <a href=""><i class="fas fa-pager"><li>보관함</li></i></a>
+            <a href=""><i class="fas fa-record-vinyl"><li>시청 기록</li></i></a>
+            <a href=""><i class="far fa-play-circle"><li>내 동영상</li></i></a>
+            <a href=""><i class="fas fa-film"><li>나중에 볼 동영상</li></i></a>
+            <hr>
+            <a href=""><i class="fas fa-cog"><li>설정</li></i> </a>
+            <a href=""><i class="fas fa-bug"><li>신고 기록</li></i></a>
+            <a href=""><i class="fas fa-person-booth"><li>고객센터</li></i></a>
+            <a href=""><i class="far fa-comment"><li>피드백</li></i></a>
+        </ul>
+    </div>
+    <div class="col-md-10">
+        <div class="playing_logo">
+            <img src="/static/img/home.jpg">
+        </div>
+
+        <div class="playing_video">
+            <div style="width: 18rem; margin-left: 7px;">
+                <a href="{% url 'youtube:detail' %}"><img src="/static/img/test1.jpg" class="card-img-top" style="height: 40%;"></a>
+                <div class="playing_info">
+                    <img src="/static/img/카카오곰탱이.jpg">
+                    <span class="playing_title">
+                        노트북 소개 영상 합니다 재밌게 봐주세요!! 
+                    </span>
+                </div>
+                <span class="playing_name">홍 Tube</span> /
+                <span class="playing_count">views 200,000회</span>
+            </div>
+            <div style="width: 18rem; margin-left: 7px;">
+                <a href="{% url 'youtube:detail' %}"><img src="/static/img/test2.jpg" class="card-img-top" style="height: 40%;"></a>
+                <div class="playing_info">
+                    <img src="/static/img/카카오곰탱이.jpg">
+                    <span class="playing_title">
+                        노트북 소개 영상 합니다 재밌게 봐주세요!! 
+                    </span>
+                </div>
+                <span class="playing_name">홍 Tube</span> /
+                <span class="playing_count">views 200,000회</span>
+            </div>
+            <div style="width: 18rem; margin-left: 7px;">
+                <a href="{% url 'youtube:detail' %}"><img src="/static/img/test3.jpg" class="card-img-top" style="height: 40%;"></a>
+                <div class="playing_info">
+                    <img src="/static/img/카카오곰탱이.jpg">
+                    <span class="playing_title">
+                        노트북 소개 영상 합니다 재밌게 봐주세요!! 
+                    </span>
+                </div>
+                <span class="playing_name">홍 Tube</span> /
+                <span class="playing_count">views 200,000회</span>
+            </div>
+            <div style="width: 18rem; margin-left: 7px;">
+                <a href="{% url 'youtube:detail' %}"><img src="/static/img/test4.jpg" class="card-img-top" style="height: 40%;"></a>
+                <div class="playing_info">
+                    <img src="/static/img/카카오곰탱이.jpg">
+                    <span class="playing_title">
+                        노트북 소개 영상 합니다 재밌게 봐주세요!! 
+                    </span>
+                </div>
+                <span class="playing_name">홍 Tube</span> /
+                <span class="playing_count">views 200,000회</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

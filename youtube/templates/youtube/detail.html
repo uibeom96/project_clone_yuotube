@@ -1,18 +1,18 @@
 {% extends 'base.html' %}
-{% block title %} Youtube {% endblock %}
+{% block title %} Youtube detail {% endblock %}
 
 {% block content %}
 <br>
 <div class="row">
     <div class="col-md-9">
         <section class="player">
-            <video src="media/videos/나이트3D_코딩.mp4" controls></video>
+            <video src="/media/videos/나이트3D_코딩.mp4" autoplay controls></video>
         </section>    
     
         <section class="info">
             <div class="metadata">
                 <ul class="hashtags">
-                    <li >#코딩</li>
+                    <li>#코딩</li>
                     <li>#프론트엔드</li>
                     <li>#백엔드</li>
                 </ul>
@@ -52,7 +52,7 @@
     
             <div class="channel_info">
                 <div class="metadata">
-                    <img src="static/img/카카오곰탱이.jpg">
+                    <img src="/static/img/카카오곰탱이.jpg">
     
                     <div class="userinfo">
                         <span class="name">홍 Tube</span>
@@ -74,7 +74,7 @@
                 <span class="comments_array"><i class="fas fa-sort-amount-down-alt"> </i> 정렬기준</span>
             </div>
             <div class="comments_img">
-                <img src="static/img/카카오곰탱이.jpg" alt="">
+                <img src="/static/img/카카오곰탱이.jpg" alt="">
                 <textarea name="" id="" cols="100" rows="1"></textarea>
                 <span class="comments_btn">
                     <button>등록</button>
@@ -86,24 +86,24 @@
     </div>
     <div class="col-md-3">
         <section class="upnext">
-            <span class="title">다음 동영상</span>
+            <span class="title">다른 동영상</span>
             <ul class="video_list">
                 <li class="items">
-                    <div class="video_img"><img src="static/img/test1.jpg"></div>
+                    <div class="video_img"><img src="/static/img/test1.jpg"></div>
                     <div class="video_info">
                         <span class="title_item">Lorem ipsum, dolor sit amet consectetur adipisicing elit</span>
                         <span class="hitcount_item">조회수 : 4155</span>
                     </div>
                 </li>
                 <li class="items">
-                    <div class="video_img"><img src="static/img/test2.jpg"></div>
+                    <div class="video_img"><img src="/static/img/test2.jpg"></div>
                     <div class="video_info">
                         <span class="title_item">Lorem ipsum, dolor sit amet consectetur adipisicing elit</span>
                         <span class="hitcount_item">조회수 : 95</span>
                     </div>
                 </li>
                 <li class="items">
-                    <div class="video_img"><img src="static/img/test3.jpg"></div>
+                    <div class="video_img"><img src="/static/img/test3.jpg"></div>
                     <div class="video_info">
                         <span class="title_item">Lorem ipsum, dolor sit amet consectetur adipisicing elit</span>
                         <span class="hitcount_item">조회수 : 684</span>
