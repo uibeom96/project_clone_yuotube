@@ -2,78 +2,117 @@
 {% block title %} Youtube {% endblock %}
 
 {% block content %}
-    <section class="player">
-        <video src="media/videos/나이트3D_코딩.mp4" controls></video>
-    </section>    
-    <section>
-    <div class="metadata">
-        <ul class="hashtags">
-            <li >#코딩</li>
-            <li>#프론트엔드</li>
-            <li>#백엔드</li>
-        </ul>
-        <div class="titlebuttion">
-            <span class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Reiciendis ipsam officiis obcaecati sapiente. Dolore, 
-                 ut? Reiciendis officiis minus tenetur optio, iste porro voluptas
-            </span>
-            <button class="morebtn">
-                <i class="fas fa-caret-down"></i>
-            </button>
+<br>
+<div class="row">
+    <div class="col-md-9">
+        <section class="player">
+            <video src="media/videos/나이트3D_코딩.mp4" controls></video>
+        </section>    
+    
+        <section class="info">
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li >#코딩</li>
+                    <li>#프론트엔드</li>
+                    <li>#백엔드</li>
+                </ul>
+    
+                <div class="title_button">
+                    <span class="title">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Reiciendis ipsam officiis obcaecati sapiente. Dolore, 
+                        ut? Reiciendis officiis minus tenetur optio, iste porro voluptas
+                    </span>
+                    <button class="morebtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+    
+                <span class="hitcount">views 15,512,550회</span>
+    
+            </div>
+    
+            <ul class="actions">
+                <li>
+                    <button><i class="fas fa-thumbs-up"><span>좋아요</span></i></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-thumbs-down"><span>싫어요</span></i></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-share"><span>Shere</span></i></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-plus"><span>Save</span></i></button>
+                </li>
+                <li>
+                    <button><i class="fab fa-font-awesome-flag"><span>Report</span></i></button>
+                </li>
+            </ul>
+    
+            <div class="channel_info">
+                <div class="metadata">
+                    <img src="static/img/카카오곰탱이.jpg">
+    
+                    <div class="userinfo">
+                        <span class="name">홍 Tube</span>
+                        <span class="subscribers">구독자 : 54명</span>
+                        <span class="discription">인공지능은 인간의 학습능력, 추론능력, 지각능력, 논증능력, 자연언어의 이해능력 등을
+                            인공적으로 구현한 컴퓨터 프로그램 또는 이를 포함한 컴퓨터 시스템이다.
+                            하나의 인프라 기술이기도 하다. 인간을 포함한 동물이 갖고 있는 지능 즉,
+                            natural intelligence와는 다른 개념이다.</span>
+                    </div>
+    
+                </div>
+                <button class="subscribe">구독하기<i class="fas fa-play-circle"></i></button>
+            </div>
+        </section>
 
-        </div>
-        <div class="hitcount">
-            <span class="count">15000 views</span>
-        </div>
-    </div>
+        <section class="comments">
+            <div class="comments_items">
+                <span class="comments_count">댓글 5,541개</span>
+                <span class="comments_array"><i class="fas fa-sort-amount-down-alt"> </i> 정렬기준</span>
+            </div>
+            <div class="comments_img">
+                <img src="static/img/카카오곰탱이.jpg" alt="">
+                <textarea name="" id="" cols="100" rows="1"></textarea>
+                <span class="comments_btn">
+                    <button>등록</button>
+                    <button>취소</button>
+                </span>
+            </div>
+        </section>
 
-    <ul class="actions">
-        <li><button><i class="fas fa-thumbs-up"><span>좋아요</span></i></button></li>
-        <li><button><i class="fas fa-thumbs-down"><span>싫어요</span></i></button></li>
-        <li><button><i class="fas fa-share"><span>Shere</span></i></button></li>
-        <li><button><i class="fas fa-plus"><span>Save</span></i></button></li>
-        <li><button><i class="fab fa-font-awesome-flag"><span>Report</span></i></button></li>
-    </ul>
-    <div class="channel_info">
-        <div class="metadata">
-            <img src="static/img/카카오곰탱이.jpg">
-        </div>
-        <div class="userinfo">
-            <span class="name">홍 Tube</span>
-            <span class="subscribers">54명</span>
-        </div>
-        <button class="subscribe">구독하기</button>
     </div>
-    </section>
-    <section class="upnext">
-        <span class="title">다음 동영상</span>
-        <ul class="item">
-            <li class="img_item">
-                <img src="static/img/test1.jpg">
-                <div class="info">
-                    <span class="title_item">Lorem ipsum, dolor sit amet consectetur adipisicing elit</span>
-                    <span class="name_item">홍 Tube</span>
-                    <span class="hitcount_item">조회수 : 4155</span>
-                </div>
-            </li>
-            <li class="img_item">
-                <img src="static/img/test2.jpg">
-                <div class="info">
-                    <span class="title_item">Lorem ipsum, dolor sit amet consectetur adipisicing elit</span>
-                    <span class="name_item">홍 Tube</span>
-                    <span class="hitcount_item">조회수 : 95</span>
-                </div>
-            </li>
-            <li class="img_item">
-                <img src="static/img/test3.jpg">
-                <div class="info">
-                    <span class="title_item">Lorem ipsum, dolor sit amet consectetur adipisicing elit</span>
-                    <span class="name_item">홍 Tube</span>
-                    <span class="hitcount_item">조회수 : 684</span>
-                </div>
-            </li>
-        </ul>
-    </section>
+    <div class="col-md-3">
+        <section class="upnext">
+            <span class="title">다음 동영상</span>
+            <ul class="video_list">
+                <li class="items">
+                    <div class="video_img"><img src="static/img/test1.jpg"></div>
+                    <div class="video_info">
+                        <span class="title_item">Lorem ipsum, dolor sit amet consectetur adipisicing elit</span>
+                        <span class="hitcount_item">조회수 : 4155</span>
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="video_img"><img src="static/img/test2.jpg"></div>
+                    <div class="video_info">
+                        <span class="title_item">Lorem ipsum, dolor sit amet consectetur adipisicing elit</span>
+                        <span class="hitcount_item">조회수 : 95</span>
+                    </div>
+                </li>
+                <li class="items">
+                    <div class="video_img"><img src="static/img/test3.jpg"></div>
+                    <div class="video_info">
+                        <span class="title_item">Lorem ipsum, dolor sit amet consectetur adipisicing elit</span>
+                        <span class="hitcount_item">조회수 : 684</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
 {% endblock %}
 
 <!-- fas fa-caret-down
